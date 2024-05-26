@@ -10,6 +10,8 @@ resource "aws_instance" "expenseproject" {
 
 resource "aws_security_group" "awssecuritygroup" {
   #vpc_id = aws_vpc.example.id
+
+  #the below is called as block not map or list
   egress {
     from_port        = 80
     to_port          = 80 
